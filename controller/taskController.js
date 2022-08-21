@@ -9,8 +9,8 @@ const mongoose = require('mongoose');
 
       const { task, completed } = req.body;
 
-      const dataTodo = {
-          todo,
+      const dataTask = {
+          task,
          completed
       }
 
