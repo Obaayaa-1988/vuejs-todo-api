@@ -36,7 +36,7 @@ const mongoUrl = process.env.MongoURL;
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology : true })
 .then(result => {
     if(result)
-    console.log("connected to task-mongo: successful")
+    console.log("connected to api task-mongo: successful")
 }).catch(err => {
     console.log(err)
 })
