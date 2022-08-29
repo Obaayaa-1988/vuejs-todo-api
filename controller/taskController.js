@@ -26,7 +26,7 @@ const mongoose = require('mongoose');
 
 
 
-//fetching all todos from the database or mongodb server
+//fetching all todos or task from the database or mongodb server
 const fetchTasks = (req, res) => {
     TaskModel.find().then(results => {
         res.send(results)
@@ -66,7 +66,7 @@ const updateTask = (req, res) => {
         .then((results) => {
             res.send(results)
         }).catch((err) => {
-            console.log({ message: "updated successfully" })
+            console.log({ message: "task updated successfully" })
         })
 
 
