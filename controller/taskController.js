@@ -54,7 +54,7 @@ const deleteTask = (req, res) => {
     })
 }
 
-//updating a particula todo using it unique id
+//updating a particular todo using it unique id
 const updateTask = (req, res) => {
 
     const { completed } = req.body;
