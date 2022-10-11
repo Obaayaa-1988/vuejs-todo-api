@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 7576
 //localhost 8008 is coming from the frontend host vue
 app.use(cors({
     credentials: true, //metedata we are passing along
-    origin: "http://localhost:8008",
+    origin: "http://localhost:8080",
     methods: "GET, POST, OPTIONS, PUT, DELETE"
 }))
 
