@@ -62,7 +62,7 @@ const updateTask = (req, res) => {
     const dataTask = {
         completed
     };
-    TaskModel.updateOne({ _id: req.params.id }, dataTodo)
+    TaskModel.updateOne({ _id: req.params.id }, dataTask)
         .then((results) => {
             res.send(results)
         }).catch((err) => {
